@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aayush9029.github.io/nuphy-air65-guide/sitemap.xml
