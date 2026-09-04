@@ -267,10 +267,16 @@ footer .footer-links{display:flex;flex-wrap:wrap;gap:16px;font-size:11px}
 .led-assembly details{margin-top:17px}
 footer .footer-meta .footer-note{font-size:13px;line-height:1.6;color:var(--muted)}
 .footer-note a{color:var(--ink)}
-.egg-toast{position:fixed;left:50%;bottom:25px;z-index:20;transform:translate(-50%,12px);opacity:0;pointer-events:none;background:#1d1d1f;color:white;padding:10px 17px;border-radius:100px;font-size:12px;box-shadow:0 5px 20px #00000012;transition:opacity .2s ease,transform .2s ease;white-space:nowrap}
-.egg-toast.show{opacity:1;transform:translate(-50%,0)}
 .key-spark{position:fixed;width:7px;height:7px;border-radius:2px;background:var(--spark-color);pointer-events:none;z-index:18;box-shadow:0 0 9px var(--spark-color)}
 body.party .pair::after{height:5px;animation-duration:2.8s}
 body.party .hero-keys::before,body.party .product-art::before{opacity:1;filter:blur(28px) saturate(2.4)}
 @media(max-width:720px){.intro{padding:28px 0 21px}.led-assembly{gap:16px}.light-list{gap:7px 12px}.footer-note{max-width:37ch}.light-choice{min-height:34px}.led-strip{margin-top:4px}}
 @media(prefers-reduced-motion:reduce){.hero-key,.egg-toast,.led-pixel,.led-strip{transition:none}body.party .pair::after{animation:none}}
+
+.keyboard-toy{transition:transform .18s ease-out;touch-action:manipulation}
+.led-pixel{animation:led-breathe 3.8s ease-in-out infinite;animation-delay:var(--pixel-delay,0ms)}
+@keyframes led-breathe{0%,100%{opacity:1}50%{opacity:.58}}
+.shortcut-toy{appearance:none;border:0;background:none;padding:0;color:inherit;font:inherit;cursor:pointer;border-radius:6px;touch-action:manipulation}
+.shortcut-toy:hover kbd{border-color:#a8b9cd}
+.shortcut-toy:focus-visible{outline:2px solid #2799df;outline-offset:4px}
+@media(prefers-reduced-motion:reduce){.led-pixel{animation:none}.keyboard-toy{transition:none}}

@@ -23,20 +23,11 @@ clear.addEventListener('click', () => { search.value = ''; filterShortcuts(); se
 filterShortcuts();
 
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-const toast = document.querySelector('.egg-toast');
 const colors = ['#35d6a0', '#72b8fa', '#b69aff', '#f395c3', '#f3cf68'];
-let toastTimer;
 let partyTimer;
 let lastFnPress = 0;
 let logoClicks = 0;
 let logoTimer;
-
-function whisper(message) {
-  toast.textContent = message;
-  toast.classList.add('show');
-  clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => toast.classList.remove('show'), 1800);
-}
 
 function sparkle(element) {
   if (reducedMotion.matches) return;
@@ -64,7 +55,6 @@ function party(element) {
   clearTimeout(partyTimer);
   partyTimer = setTimeout(() => document.body.classList.remove('party'), 5000);
   sparkle(element);
-  whisper('RGB: unnecessarily necessary.');
   document.querySelectorAll('.led-strip').forEach(strip => wave(strip));
 }
 
@@ -107,13 +97,12 @@ document.querySelectorAll('.hero-key').forEach(key => {
     setTimeout(() => key.classList.remove('is-pressed'), 160);
     if (key.dataset.egg === 'fn') {
       lastFnPress = Date.now();
-      whisper('fn.');
+      sparkle(key);
     } else if (Date.now() - lastFnPress < 3000) {
       lastFnPress = 0;
       party(key);
     } else {
       sparkle(key);
-      whisper('Try fn, then R.');
     }
   });
 });
@@ -140,4 +129,41 @@ document.querySelector('[data-egg="logo"]').addEventListener('click', event => {
     logoClicks = 0;
     party(event.currentTarget);
   }
+});
+
+const keyboardToy = document.querySelector('[data-egg="keyboard"]');
+keyboardToy.addEventListener('dblclick', () => party(keyboardToy));
+keyboardToy.addEventListener('pointermove', event => {
+  if (reducedMotion.matches || event.pointerType === 'touch') return;
+  const bounds = keyboardToy.getBoundingClientRect();
+  const x = (event.clientX - bounds.left) / bounds.width - .5;
+  const y = (event.clientY - bounds.top) / bounds.height - .5;
+  keyboardToy.style.transform = `perspective(700px) rotateY(${x * 9}deg) rotateX(${-y * 9}deg)`;
+});
+keyboardToy.addEventListener('pointerleave', () => { keyboardToy.style.transform = ''; });
+
+document.querySelectorAll('.led-strip').forEach(strip => {
+  strip.querySelectorAll('.led-pixel').forEach((pixel, index) => {
+    pixel.style.setProperty('--pixel-delay', `${index * 90}ms`);
+  });
+  strip.addEventListener('pointerenter', () => wave(strip));
+});
+
+document.querySelectorAll('kbd').forEach(key => {
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.className = 'shortcut-toy';
+  button.setAttribute('aria-label', `Animate ${key.title || key.textContent} key`);
+  key.replaceWith(button);
+  button.append(key);
+  button.addEventListener('click', () => {
+    sparkle(button);
+    if (reducedMotion.matches) return;
+    key.animate([
+      { transform: 'translateY(0)' },
+      { transform: 'translateY(3px)', boxShadow: '0 0 0 transparent' },
+      { transform: 'translateY(-2px)' },
+      { transform: 'translateY(0)' }
+    ], { duration: 280, easing: 'ease-out' });
+  });
 });
