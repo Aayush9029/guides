@@ -21,3 +21,123 @@ function filterShortcuts() {
 search.addEventListener('input', filterShortcuts);
 clear.addEventListener('click', () => { search.value = ''; filterShortcuts(); search.focus(); });
 filterShortcuts();
+
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+const toast = document.querySelector('.egg-toast');
+const colors = ['#35d6a0', '#72b8fa', '#b69aff', '#f395c3', '#f3cf68'];
+let toastTimer;
+let partyTimer;
+let lastFnPress = 0;
+let logoClicks = 0;
+let logoTimer;
+
+function whisper(message) {
+  toast.textContent = message;
+  toast.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toast.classList.remove('show'), 1800);
+}
+
+function sparkle(element) {
+  if (reducedMotion.matches) return;
+  const bounds = element.getBoundingClientRect();
+  for (let i = 0; i < 10; i++) {
+    const spark = document.createElement('span');
+    spark.className = 'key-spark';
+    spark.setAttribute('aria-hidden', 'true');
+    spark.style.setProperty('--spark-color', colors[i % colors.length]);
+    spark.style.left = `${bounds.left + bounds.width / 2}px`;
+    spark.style.top = `${bounds.top + bounds.height / 2}px`;
+    document.body.append(spark);
+    const angle = Math.PI * 2 * i / 10;
+    const distance = 45 + Math.random() * 40;
+    const animation = spark.animate([
+      { transform: 'translate(0, 0) rotate(0)', opacity: 1 },
+      { transform: `translate(${Math.cos(angle) * distance}px, ${Math.sin(angle) * distance}px) rotate(100deg)`, opacity: 0 }
+    ], { duration: 700, easing: 'cubic-bezier(.2,.7,.3,1)' });
+    animation.finished.then(() => spark.remove()).catch(() => spark.remove());
+  }
+}
+
+function party(element) {
+  document.body.classList.add('party');
+  clearTimeout(partyTimer);
+  partyTimer = setTimeout(() => document.body.classList.remove('party'), 5000);
+  sparkle(element);
+  whisper('RGB: unnecessarily necessary.');
+  document.querySelectorAll('.led-strip').forEach(strip => wave(strip));
+}
+
+function wave(strip) {
+  if (reducedMotion.matches) return;
+  strip.querySelectorAll('.led-pixel').forEach((pixel, index) => {
+    pixel.getAnimations().forEach(animation => animation.cancel());
+    pixel.animate([
+      { filter: 'brightness(1)' },
+      { filter: 'brightness(1.8)', background: colors[index % colors.length] },
+      { filter: 'brightness(1)' }
+    ], { duration: 650, delay: index * 35, easing: 'ease-in-out' });
+  });
+}
+
+function setLight(kind, choice) {
+  const strip = document.querySelector(`[data-led="${kind}"]`);
+  strip.style.setProperty('--led-color', choice.dataset.color);
+  document.querySelectorAll(`[data-light="${kind}"]`).forEach(button => {
+    button.setAttribute('aria-pressed', String(button === choice));
+  });
+  wave(strip);
+}
+
+document.querySelectorAll('[data-light]').forEach(choice => {
+  choice.addEventListener('click', () => setLight(choice.dataset.light, choice));
+});
+
+document.querySelectorAll('[data-led]').forEach(strip => {
+  strip.addEventListener('click', () => {
+    const choices = [...document.querySelectorAll(`[data-light="${strip.dataset.led}"]`)];
+    const current = choices.findIndex(choice => choice.getAttribute('aria-pressed') === 'true');
+    setLight(strip.dataset.led, choices[(current + 1) % choices.length]);
+  });
+});
+
+document.querySelectorAll('.hero-key').forEach(key => {
+  key.addEventListener('click', () => {
+    key.classList.add('is-pressed');
+    setTimeout(() => key.classList.remove('is-pressed'), 160);
+    if (key.dataset.egg === 'fn') {
+      lastFnPress = Date.now();
+      whisper('fn.');
+    } else if (Date.now() - lastFnPress < 3000) {
+      lastFnPress = 0;
+      party(key);
+    } else {
+      sparkle(key);
+      whisper('Try fn, then R.');
+    }
+  });
+});
+
+document.querySelector('[data-egg="keyboard"]').addEventListener('click', event => {
+  const keyboard = event.currentTarget;
+  sparkle(keyboard);
+  if (!reducedMotion.matches) {
+    keyboard.getAnimations().forEach(animation => animation.cancel());
+    keyboard.animate([
+      { transform: 'rotate(0) translateY(0)' },
+      { transform: 'rotate(-2deg) translateY(-5px)' },
+      { transform: 'rotate(1deg) translateY(1px)' },
+      { transform: 'rotate(0) translateY(0)' }
+    ], { duration: 500, easing: 'ease-out' });
+  }
+});
+
+document.querySelector('[data-egg="logo"]').addEventListener('click', event => {
+  logoClicks++;
+  clearTimeout(logoTimer);
+  logoTimer = setTimeout(() => { logoClicks = 0; }, 1800);
+  if (logoClicks >= 5) {
+    logoClicks = 0;
+    party(event.currentTarget);
+  }
+});

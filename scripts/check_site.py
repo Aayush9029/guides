@@ -8,7 +8,7 @@ import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / 'site'
-BASE = 'https://aayush9029.github.io/nuphy-air65-guide/'
+BASE = 'https://aayush9029.github.io/guides/'
 
 class Page(HTMLParser):
     def __init__(self):

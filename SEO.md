@@ -2,14 +2,14 @@
 
 The guide targets NuPhy Air65 V3 pairing, keyboard shortcuts, flashing green light, RGB lighting, battery display and sleep settings. It is a single focused English page, with one canonical URL:
 
-https://aayush9029.github.io/nuphy-air65-guide/
+https://aayush9029.github.io/guides/
 
 ## Included
 
 - A descriptive product-specific title, description, one H1 and ordered section headings.
 - Static, readable instructions and all 21 shortcuts in the HTML. Search does not require a server.
 - A self-referencing HTTPS canonical, indexable robots meta tag and an XML sitemap.
-- Article, WebPage, WebSite, Person and ImageObject JSON-LD, with visible author, update date, sources and image credits.
+- Article, WebPage, WebSite, Person and ImageObject JSON-LD, with author metadata, sources and image credits.
 - Open Graph and Twitter summary-card metadata with a local JPEG image and descriptive alt text.
 - Locally hosted responsive WebP photography, intrinsic image dimensions, a high-priority hero image and lazy-loaded secondary images.
 - System fonts, local CSS and JavaScript, no trackers or external runtime dependencies.
@@ -22,7 +22,7 @@ The Nu HTML Checker returned no errors or warnings for the published HTML source
 
 ## GitHub Pages scope
 
-The project lives under `/nuphy-air65-guide/`. Search engines read robots.txt only from the origin root, `https://aayush9029.github.io/robots.txt`. A project-level robots.txt cannot control that origin. The supplied `site/robots.txt` is suitable for a future root-domain deployment; this project currently relies on the origin having no crawl restriction. The origin-root robots URL returned 404 during setup, which does not block crawling.
+The project lives under `/guides/`. Search engines read robots.txt only from the origin root, `https://aayush9029.github.io/robots.txt`. A project-level robots.txt cannot control that origin. The supplied `site/robots.txt` is suitable for a future root-domain deployment; this project currently relies on the origin having no crawl restriction. The origin-root robots URL returned 404 during setup, which does not block crawling.
 
 The sitemap can be submitted as its full URL in a verified Google Search Console or Bing Webmaster Tools property. This project does not claim that a property has been verified, a sitemap submitted, or indexing completed.
 
