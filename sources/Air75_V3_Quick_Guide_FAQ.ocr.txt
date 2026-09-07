@@ -1,0 +1,563 @@
+PAGE 1
+QUICK GUIDE
+FAQ
+
+
+PAGE 2
+Connection Mode Selection
+HERA Wik / HR AKOIBIR / Cl4bolA AZ 7ho|=
+
+O Wired mode / #2e48z¢ /
+
+© Bluetooth mode / #5 #zt /
+BREE /F#A SE
+
+Bluetootht-Kk/S25A 25
+
+(J+ ee
+
+OlUoo) te w tn
+
+eeCges)
+eeesseeeegunes| Co Set ol
+imeasesessesescess
+In the wired mode, it is necessary to use a FN+1/2/3=
+data cable to connect with the device. Bluetooth 1 / Bluetooth 2 / Bluetooth 3
+
+c
+
+01
+
+© 2.4G mode / 2.4G #&xt /
+24GE-E/2.4GR5
+
+7S am (2
+& (so
+Le _kes J]
+—
+(1 Ife (é s
+2 3 4
+) 7) a) Sa
+
+= —————
+vas, | a | w 3 R
+a) Se) Se) Se) |S
+
+FN +4
+
+
+PAGE 3
+Backlight Settings
+
+BRAHMI / NY DST bage / HOE AS Jfol=
+
+O Brightness + - / SCR EIS /
+NYDITL Penne < aie | e7lees
+SN II NMI i)
+
+O Backlight color switching / H3tEhB WIR /
+NYDFIT bODI— EDUBAS / BEE AI a ue
+
+MANIK LI II iS
+a “Se
+
+cosUGs:
+- saaeans
+
+02
+
+O Backlight effect switching / BstixtyiR /
+NYDIT FE- PODER LENE BI} Met
+] a) a) ew) |S ZSPN . Ae — J —|
+
+locos eas eE256
+iecoce 1D
+
+O Backlight speed - + / WIRE REHRadea0 /
+a4 FARS Ria / wees Ae at Sy
+
+EET = He 7)
+joscGGq
+
+Tee a3
+
+
+
+PAGE 4
+Knob Installation Guide
+Wea 23H85| / JT AT FE /S AMAl JfOlE
+
+© Accessories & Tools
+
+—_——-,
+
+Knob Module x 1 Keycap / Switch Puller x 1 Screwdriver x 1
+
+03
+
+
+PAGE 5
+
+
+PAGE 6
+
+
+PAGE 7
+More Information 04
+BZ(aB / S5(CH#LUUWA/A BE US
+
+For more information, please scan the QR code below to see the complete manual.
+FHT ALAS SEAS.
+QRI- ReEA+ Vv VISCKUBU MAS EMCEE.
+
+OfeH QRASS AMSA = Aol Het SA] WSS Fast + USC.
+
+EN/JA/KO Manual CN Manual
+
+
+PAGE 8
+FAG
+
+
+PAGE 9
+Why is Bluetooth not working for me?
+
+1. Check your history of connected devices to see if your keyboard
+is in it.
+
+2. Refer to the quick guide shipped with the keyboard and follow
+the relevant steps if it is not in the history.
+
+3. Remove your keyboard from the list if it has been added before.
+4. After (3)., turn the Bluetooth connection on your computer/key-
+board off then back on, broadcast the device info from your
+keyboard, and complete the rest of the pairing process on your
+computer.
+
+Why is my Bluetooth connection spotty?
+
+Try pairing again with the instructions provided in Q.01, if the
+problem persists, updating to the latest firmware may resolve you
+issue.
+
+1. Navigate to nuphy.io.
+
+2. Perform firmware update in the “Keyboard Settings” section of
+NuPhylO.
+
+Q1-04
+
+Why can’t | connect with 2.4 GHz?
+
+1. Set the keyboard to wireless mode;
+
+2. Press FN+R (Air60 & Halo65) / FN+4 (Air75 & Air96 & Halo75
+& Halo96) to enable the 2.4G channel, the wireless light bar on the
+upper-left corner should turn green, which will be maintained if
+the connection has been successfully established. If the green light
+slowly pulses, it is an indication the connection is being attempted,
+if the pulsing does not stop after 60 seconds try steps 3 and 4 to
+reestablish pairing;
+
+3. Long press FN+R (Air60 & Halo65) / FN+4 (Air75 & Air96 &
+Halo75 & Halo96) for 3 seconds to enter the 2.4G pairing mode,
+the indicator will start blinking green;
+
+4. Re-plug the 2.4G receiver, if the pairing is successful, the green
+indicator will remain lit;
+
+5. Repeat step 3 and 4 a few times if you still fail to setup a stable
+connection.
+
+Why is my 2.4G connection unstable?
+
+1. If possible, keep the 2.4G receiver away from other
+transmitters/receivers can help minimizing interferences;
+
+2. Do not use the receiver with any hub with a metal case;
+
+3. Try pairing again with the instructions provided in step 3 and 4
+of Q.03.
+
+
+PAGE 10
+Some of my keys are not responding to presses/
+typing on their own, what now?
+
+1. Make sure your battery level hasn’t dropped too low.
+2. If the battery is well charged, try hot-swapping out the
+problematic switch, and swap in a replacement switch.
+
+NuPhylO
+
+Visit nuphy.io to use the product with the web driver/configurator.
+If for any reason your keyboard cannot be detected under the wired
+mode, feel free to contact our technical support.
+
+Q5-Q9
+
+How should | maximize my battery life?
+
+To maximize battery performance, we recommend turning off all
+the lighting effects when working under wireless for sustained
+periods of time, for maximum lifespan make sure you always
+charge the keyboard with a 5V/1A charger.
+
+Can | disable auto sleep mode?
+Short press FN+] to enable/disable Auto-sleep.
+
+Something is missing in my package
+Please contact us at service@nuphy.com to assist you.
+
+
+PAGE 11
+ATA RAN TEER E
+
+1. ABBRDADLEMLE:
+
+2. MRS EST IBS BIR | RT ES
+
+3. HRS HEE BNE PER PR OAT:
+
+4. KABSMITA BR RRME TING, ARAL HELE,
+
+BSE FAAP HARARE AM, rAtesZBNA.
+
+AMA EASE FIRE
+1. §BU7EMD nuphyio.com,
+2. 4 NuPhylO PA "“AIRE RA, ATES HERE.
+
+Q1-04
+
+AHAB 2.46 HERE
+
+1. CRAB ATAEH
+
+2. 2—F FN+R (Air60 & Halo65) / FN+4 (Air75 & Air96 & Halo75
+& HaloQ6)i#A 2.46 3518, ALA RGB AIT EMRE, URB
+RAUBER, MRRITSRAK, WANE, WR-BR
+
+AREBIS 60 MMAR IE R26 |
+
+3. 464% FN+R (Air60 & Halo65) / FN+4 (Air75 & Air96 & Halo75 &
+Halo96) (3 #>) dA 2.46 Bewiest, ALS RGB KAZI BRHIR
+
+4. HR 2.46 HANES, ARMAND, RE RGB APTA RRA
+RBA
+
+5. BAEERLINS RAR 3 MGR 4.
+SUR ER EGR RARER, RNS EMR
+service@nuphy.com,
+
+AAR 2.46 HERE
+
+1, RBA SR UTERO
+
+2. 1BDIE 2.46 HERES BINAAY Hub EH
+
+3. SRB MeN 2.46 Hues, AeA IRONK:
+OPERANT:
+
+@+GR FN+R (Air60 & Halo65) / FN+4 (Air75 & Air96 & Halo75 &
+Halo96) (3#)) ¥EA 2.4 BOXHErt, RGB ATR RRS:
+OPGH 2.46 JEWS, ALAA, RE RGB APTA MRAM
+
+RBA.
+
+
+PAGE 12
+HE ARBARMNE AiR A aH AIKEAD
+
+1 SHRRSAV EH, MRR RNIR:
+
+2. UIESERIESS, TUBE IRSHITS, BRAORIEIRIRIT, WEAR
+SAS AAREAHORIN F, aR bEHTS,
+
+NuPhylO
+
+iBER nuphyio.com MIURA EBA in. MREABIRAE, WK
+MAGNA, RANK AR MIDS ASSE.
+
+Q5-Q9
+
+EGBA FEAR? Ifo) IE HBT FOB
+UR KAEDRABTE NBN MATIC. BNUB SV 1A 8
+FABRA TAS.
+
+HE BF] DARA NAR
+AER FN+] OST BSUS RIINRIIAE.
+
+ER PRD ACRE thie
+CLP AR Bc aE HL th a) I RRA BATS RAR
+fiB#8: service@nuphy.com
+
+
+PAGE 13
+72+¢ Bluetooth}#Z4iD CEA
+
+1. RMICT INA AOR EBALT KES.
+
+2. FRR DEUBAlL. 24 y7H4 KOFIBICiED THRL
+KES.
+
+3. RR BE MD SBAIL. FINI ADS+-MK—- RORMERE
+HUBRUT <PESU.
+
+4. FRRRBUBRA. BRET INT ARU+—A- keBREBL. BET
+YODA RORBFIBICHED CHL TK PESU.
+
+BluetoothO#ZMRREBOISERECT D
+1.92744 b nuphy.io C7 7LALTKCKESU.
+
+2. NuPhylOD '=+—7R—- RRE] X-YC, 77-hILV EME
+ITS ESU.
+
+TREZAGL Y —N(CHBRE CE IALIDY
+1.4-K-REDTVLAE- RCDUBART.
+
+2. FN+R (Air60 & Halo65) / FN+4 (Air75 & Air96 & Halo75 &
+HaloQ6)@## UL T2.4GF v YAIVUICAUES, ALOIT b/N—DMR
+BICRML, 31 LAB RITUCUSBAIL, EMT. DOK<
+UORBLTWSBAIL, HAAR. Do <CUORMDCOMY LE <H
+Blk, ROME BIT T<TESL).
+
+3. FN+R (Air60 & Halo65) / FN+4 (Air75 & Air96 & Halo75 &
+Halo96)@ (3 fai) RIL UL T2Z4GR PUY FE- BICAY, AE
+DIT WN-DRBICRDYU, REC RBMLES.
+
+4. 24GLY-N-@RERLLET. KPUYVI DRIFT SE. F
+4 LN-(EREORBDS BR RITICRDUET.
+
+5. ENCE CERUBAIL, FIRE 4 Molt LT <ES).
+Lat OF IRE RT L TERK CEBU IBAIS, service@nuphy.com
+EC CHM CES.
+
+24G LY — NOBLE RREZOD
+
+1. {hO24G LY —/\— ERNIHEMO EIA TK ESL,
+
+2. DY -N-#EBRONT (SER LBUECCESU.
+
+3. 24GLY-N-EBAPUYFUTHTCS ES, FIRIAROE
+BUTS.
+
+O+-K- RED VLAE-KCMUBAET,
+
+@FN+R (Air60 & Halo65) / FN+4 (Air75 & Air96 & Halo75 &
+Halo96)% (3@§) RIL UT2Z4GN PUY FE- RNCAV ET,
+EEOST HN-RRBIOR< AMLET.
+
+@24GLY —/\—EREHLUT. BAP UYILES. FT HN
+—DBEO RMD S SRAITICE DIE SRP UY IRS CS.
+
+
+
+PAGE 14
++—DRISLBA, KCSBFCRIBT SHALE
+DTNIFKLWOCL ESD
+
+1. BO CHER L TSE SU), DUEL SSRN ODES
+VEFOCREUL TCS),
+
+2, BHREDERABAlL. FRADE UTIS+—OMEBIALT
+KREU. hy FAT Y TRREDERENTHUETOC, EOE
+BO FICE BAT CRS,
+
+NuPhylO
+
+nuphy.io7 rT RIT IN-(CPIVALTHRRRE CHAS IESU.
+BRE — ECH-H—- KAR SNBUBAlL, LID CESMLIAD
+<ESU.
+
+Q5-Q9
+
++—K—- FOBREASHSTAARUEUU)
+REABEBA TCE
+
+RIEBI1 VL AE KCEMT SBA, TATOST KEAT
+CF SCECHBENEMELSECEMCERT, FH KOK
+BCSVIADRERE HHT SC CEBRLET.
+
++—K- KFOBMAU —TFiRE ATIC TEETD
+FNVEM SHOE, BAU -TRROAY/AIMNTERT.
+
+TRmD EU UBa PE OhOnE
+info@sanyoshop.jp# Cle TIA < TES.
+
+
+PAGE 15
+nic
+su
+sm
+I>
+
+>
+
+fat
+
+2>
+e 2
+2
+TozS >
+
+m
+
+my
+
+o
+re
+7 4
+ane
+
+Bt O|F{O] Qkc¢e4, Cleto] A>}
+
+BABES AA oHFAle.
+AtAl|s}a2 C|H}o]~3 OFF/ON
+
+fo] ABES MSA AZ HA
+
+r
+d
+is
+
+22
+im
+
+rr
+
+2
+ny
+
+mA YEN
+in
+
+ox
+lo
+Hu
+
+BA fAo| Sots stele}
+ola Ee Buphy.i io 2 OSS 2
+
+nul
+é ie if
+
+myo
+e
+
+2.4G PA ozo] Zt otelL|c} Q1-04
+1. Jes Pace AMAA
+
+2. FNER (Air60 & Halo65) / FN+4 (Air75 & Air96 & Halo75 &
+Halo96) 7B SH 2.4G aA Soe Sash, 3 ey
+BA|So| SAOe FALSILIch, SAMO] Se Memos ozs]
+AS eu}, SA4o| AHpolchal SAl ABS Qe Seyeieict.
+ako} Belo] COAO|S ALAECHA Ofel Eto] chet CHA]
+ABAEAL.
+
+-1) FN+R Gree & Halo65) / FN+4 (Air75 & Air96 & Halo75
+& Halo96) 7S 320|4 Aa] SH Woes Soe Aeseich (AS
+od RGB #A|S al SAMOS hE] BYPel|ct.)
+
+) 2.4G 2|A|H}3 USBEZ EO] AAHFAL, WOlAo] ASs]4
+| sMOoF ASecch.
+AZO] S|A| hEcts, 2-1), 2-2) EAS cHAl
+
+oN
+oln
+TOL
+
+(fe
+Jo
+
+MQ.
+Bek o] SACHS AMstASols AAo| chelcpol 3124 Mle]
+A 2
+
+eee ns
+om
+zy
+
+EL to
+
+i on
+
+AE: service@nuphy. com = 4718 SAI SECS AE
+
+. x Of She Hub Ol] ABS Al Soha] 2.
+3. 2.4G eIALH 27/8} H ! xiao} 2) OfeH Ebvo] chet
+
+1
+
+-2) FN+R- (Air60 & Tage i en (Air75 & Air96 & Halo75
+
+Halo96) 7|S 320/48 27] se wos Soe Aeysteey (AS
+RGB #A\S0| SAMOS toeS 7] ZebeiLict.)
+
+2.4G 2]A/H1S USB ZEol] AAA AL, Wolo] des a
+
+o| Soe BSc.
+
+FEL W 0 SW W P>I
+>wrl
+
+mn
+
+
+PAGE 16
+Jl 2= leo] ASar| IL} Soe ets] Hq]
+ofs | S42
+
+1. HEAI7| SSS SolopFaAlQ. Gok welA|7} PSofcopH SA =
+AMS aFAle.
+
+2. HHEJ2] Seto] Aaa
+HZ oA. SAR AS of
+A Sa AAAS WAS = USech
+
+on
+
+NuPhylO
+
+= ABS ASote4 A nuphy.io # CHA| 4 Sol] 2 1elol FAQ. 4
+BEA IE} A814] HS BL, 7B alae wool
+AMA! AS oll7i| Aetoy FAQ.
+
+Q5-Q9
+
+Ae Awees of gal SS + U2? TalD Bast
+Sy YHo| Sague
+
+1, BOF BAZ} PAS Se FBOCS ASSIA, OE RGB OES
+OFF sD ASst= AS ASSect.
+
+2. HEALS SSE AlOlSe SV 1A UMHS ASsto] SMotE AS
+aaeuct
+
+AMI Se 1g s|retp2
+4
+
+FN+) 3 +20 Safes ON/OFF & + USUCH.
+
+DHAIA| BEA LH PS BO] PBOPAYL J/Et BLlAbS
+>
+
+THA] HA WY PYBO| TAAL}, AS ALS Sol] Z|APSo|
+RAH OfeH W124 Me] LE Zp Leet SAY Bhow AY 32H Me]
+
+AEA,
+
+service@nuphy.com / cs@ninone.kr
+
+
+
+PAGE 17
+@0eo
+
+Founded by a small team of passionate dreamers, NuPhy has always been at war with boredom
+and uninspiring designs. NuPhy Studio 2—-HAEMHRKMUUH NAA, SURNAM EHABH BABAK, RVLFZSRCBFE
+TNuPhy Studio, (d. BR GPM 5 15 FIFE NOGA THD, MKEDMAURESEAUCE< SSAMBNER. COZRBIAE
+PELES ZSETLES. NuPhy Studio = SHO] AFM ASO] Boj FAYSt S|APSILICH.
+Sel7t MORE WSS tS + RS MH, 0] ARCOE FOls BMotAl FS AQUICh.
+
+Copyright ©
+Designed By NuPhy in Shenzhen. All Rights Resvered.

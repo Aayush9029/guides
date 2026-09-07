@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="$description">
+<meta name="author" content="Aayush9029">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#000000">
+<title>$page_title</title>
+<link rel="canonical" href="$base">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="sitemap" type="application/xml" href="sitemap.xml">
+<link rel="stylesheet" href="assets/style.css">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="$title Guide">
+<meta property="og:title" content="$page_title">
+<meta property="og:description" content="$description">
+<meta property="og:url" content="$base">
+<meta property="og:image" content="${base}assets/nuphy-air75-v3.png">
+<meta property="og:image:width" content="624">
+<meta property="og:image:height" content="500">
+<meta property="og:image:alt" content="Black NuPhy Air75 V3 keyboard with a red rotary knob">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="$page_title">
+<meta name="twitter:description" content="$description">
+<meta name="twitter:image" content="${base}assets/nuphy-air75-v3.png">
+<meta name="twitter:image:alt" content="Black NuPhy Air75 V3 keyboard">
+<script type="application/ld+json">$schema</script>
+</head>
+<body id="top">
+<a class="skip-link" href="#shortcuts">Skip to shortcuts</a>
+<header class="site-header"><a href="#top" aria-label="NuPhy guide home"><img src="assets/nuphy-logo.png" width="86" height="24" alt="NuPhy"></a><nav aria-label="Resources"><a href="https://github.com/Aayush9029/guides">GitHub</a><a href="air75-v3-english-guide.pdf" download>$download_icon PDF</a></nav></header>
+<main>
+<header class="intro"><h1>$title</h1><button class="keyboard-toy" type="button" aria-label="Play a keyboard light wave"><img src="assets/nuphy-air75-v3.png" width="624" height="500" alt="Black NuPhy Air75 V3 keyboard with a red rotary knob" fetchpriority="high"></button></header>
+<section id="connect" class="pair" data-jump="Pair the dongle" data-icon="radio" data-search="pair pairing dongle receiver 2.4ghz wireless fn 4">
+<div><h2>Pair your dongle.</h2><ol>$pairing</ol></div><div class="hero-keys" aria-label="Fn plus 4"><button type="button" class="hero-key" data-key="Fn" aria-label="Animate Fn key">fn</button><span>+</span><button type="button" class="hero-key" data-key="4" aria-label="Animate 4 key">4</button></div>
+</section>
+<section id="shortcuts" class="reference" aria-labelledby="shortcuts-title"><h2 id="shortcuts-title">Keyboard shortcuts</h2><div class="shortcut-grid">$groups</div><p class="hint">$layout defaults. Comma and period: no Shift needed.</p></section>
+<section id="lights" class="reference" data-jump="Light indicators" data-icon="battery" data-search="lights led indicator battery colors"><h2>Light indicators</h2><div class="light-grid">$lights</div></section>
+<section id="help-topics" class="reference" aria-labelledby="help-title"><h2 id="help-title">A few more things.</h2>$faqs</section>
+<footer><p>Their guide is dog shit and takes forever to read.<br>So <a href="https://aayush.art">I made this.</a></p><div><a href="$source">Source PDF</a><a href="$manual">ANSI manual</a><a href="air75-v3-guide.txt" download>Text</a><a href="https://github.com/Aayush9029/guides/issues">Suggest a fix</a></div></footer>
+</main>
+<button id="command-trigger" class="command-trigger" type="button" aria-label="Jump to a section or shortcut" aria-haspopup="dialog" aria-controls="command-menu" aria-expanded="false" aria-keyshortcuts="Meta+K Control+K" hidden>$command_icon<span class="command-key">⌘ K</span></button>
+<dialog id="command-menu" aria-label="Jump to a section or shortcut"><div class="command-search">$search_icon<input id="command-input" type="text" role="combobox" aria-label="Find a section or shortcut" aria-controls="command-options" aria-expanded="true" aria-autocomplete="list" placeholder="Find anything…" autocomplete="off"><button id="command-close" type="button" aria-label="Close menu">Esc</button></div><div id="command-options" role="listbox" aria-label="Sections and shortcuts"></div><p id="command-empty" role="status" hidden>No matches. Try “pair” or “sleep”.</p></dialog>
+<script src="assets/guide.js" defer></script>
+</body>
+</html>

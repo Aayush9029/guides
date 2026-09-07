@@ -19,6 +19,10 @@ jobs:
     steps:
       - name: Check out source
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Build guide downloads and HTML
+        run: |
+          python3 -m pip install reportlab==5.0.1
+          python3 scripts/build_guide.py
       - name: Validate site and SEO
         run: python3 scripts/check_site.py
       - name: Configure Pages

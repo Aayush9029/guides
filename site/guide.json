@@ -1,0 +1,344 @@
+{
+  "title": "NuPhy Air75 V3",
+  "layout": "ANSI / US",
+  "modified": "2026-09-07",
+  "source": "https://cdn.shopify.com/s/files/1/0268/7297/1373/files/Air75_V3_Quick_Guide_FAQ.pdf?v=1753438891",
+  "manual": "https://www.nuphy.io/en-US/keyboardDescription",
+  "pairing": [
+    "Unplug the dongle.",
+    "Select Wireless.",
+    "Hold Fn + 4 for 3 seconds.",
+    "Flashing green? Plug the dongle in."
+  ],
+  "groups": [
+    {
+      "id": "connection",
+      "title": "Connection",
+      "icon": "bluetooth",
+      "aliases": "bluetooth bt wireless pair pairing dongle receiver 2.4ghz devices",
+      "shortcuts": [
+        {
+          "action": "Bluetooth 1",
+          "keys": [
+            "Fn",
+            "1"
+          ],
+          "aliases": "pair pairing saved device"
+        },
+        {
+          "action": "Bluetooth 2",
+          "keys": [
+            "Fn",
+            "2"
+          ],
+          "aliases": "pair pairing saved device"
+        },
+        {
+          "action": "Bluetooth 3",
+          "keys": [
+            "Fn",
+            "3"
+          ],
+          "aliases": "pair pairing saved device"
+        },
+        {
+          "action": "2.4 GHz dongle",
+          "keys": [
+            "Fn",
+            "4"
+          ],
+          "aliases": "pair pairing receiver usb wireless"
+        }
+      ],
+      "hint": "Wireless: tap to switch; hold 3 sec to pair."
+    },
+    {
+      "id": "system",
+      "title": "System",
+      "icon": "moon",
+      "aliases": "sleep battery reset restore factory",
+      "shortcuts": [
+        {
+          "action": "Auto sleep on / off",
+          "keys": [
+            "Fn",
+            "]"
+          ],
+          "aliases": "sleeping idle automatic"
+        },
+        {
+          "action": "Battery display on / off",
+          "keys": [
+            "Fn",
+            "\\"
+          ],
+          "aliases": "power charge indicator always visible"
+        },
+        {
+          "action": "Factory reset",
+          "keys": [
+            "Fn",
+            "["
+          ],
+          "hold": "3 sec",
+          "aliases": "restore factory defaults"
+        }
+      ],
+      "hint": "Sleep after 6 minutes idle."
+    },
+    {
+      "id": "backlight",
+      "title": "RGB backlight",
+      "icon": "sun",
+      "aliases": "rgb backlight brightness color colour effect animation",
+      "shortcuts": [
+        {
+          "action": "Brightness up",
+          "keys": [
+            "Fn",
+            "↑"
+          ],
+          "aliases": "brighter increase"
+        },
+        {
+          "action": "Brightness down",
+          "keys": [
+            "Fn",
+            "↓"
+          ],
+          "aliases": "dimmer decrease"
+        },
+        {
+          "action": "Next effect",
+          "keys": [
+            "Fn",
+            "←"
+          ],
+          "aliases": "pattern mode cycle"
+        },
+        {
+          "action": "Next color",
+          "keys": [
+            "Fn",
+            "→"
+          ],
+          "aliases": "colour cycle"
+        },
+        {
+          "action": "Animation slower",
+          "keys": [
+            "Fn",
+            ","
+          ],
+          "aliases": "speed slow decrease comma"
+        },
+        {
+          "action": "Animation faster",
+          "keys": [
+            "Fn",
+            "."
+          ],
+          "aliases": "speed fast increase period"
+        }
+      ],
+      "hint": ""
+    },
+    {
+      "id": "side-lights",
+      "title": "Side lights",
+      "icon": "sparkles",
+      "aliases": "rgb side lights sidelight brightness color colour effect animation",
+      "shortcuts": [
+        {
+          "action": "Brightness up",
+          "keys": [
+            "Fn",
+            "M",
+            "↑"
+          ],
+          "aliases": "brighter increase"
+        },
+        {
+          "action": "Brightness down",
+          "keys": [
+            "Fn",
+            "M",
+            "↓"
+          ],
+          "aliases": "dimmer decrease"
+        },
+        {
+          "action": "Next effect",
+          "keys": [
+            "Fn",
+            "M",
+            "←"
+          ],
+          "aliases": "pattern mode cycle"
+        },
+        {
+          "action": "Next color",
+          "keys": [
+            "Fn",
+            "M",
+            "→"
+          ],
+          "aliases": "colour cycle"
+        },
+        {
+          "action": "Animation slower",
+          "keys": [
+            "Fn",
+            "M",
+            ","
+          ],
+          "aliases": "speed slow decrease comma"
+        },
+        {
+          "action": "Animation faster",
+          "keys": [
+            "Fn",
+            "M",
+            "."
+          ],
+          "aliases": "speed fast increase period"
+        }
+      ],
+      "hint": ""
+    },
+    {
+      "id": "screenshots",
+      "title": "Screenshots",
+      "icon": "camera",
+      "aliases": "screenshot capture screen mac windows",
+      "shortcuts": [
+        {
+          "action": "Select an area · Mac / Win",
+          "keys": [
+            "Screenshot"
+          ]
+        },
+        {
+          "action": "Full screen · Mac",
+          "keys": [
+            "Fn",
+            "Screenshot"
+          ]
+        }
+      ],
+      "hint": "Use the screenshot-icon key."
+    }
+  ],
+  "lights": [
+    {
+      "id": "connection-light",
+      "title": "Connection",
+      "icon": "radio",
+      "values": [
+        [
+          "Dongle",
+          "Green",
+          "#63e6b4"
+        ],
+        [
+          "Bluetooth",
+          "Blue",
+          "#70a9ff"
+        ],
+        [
+          "Wired",
+          "Yellow",
+          "#f0d878"
+        ],
+        [
+          "Caps Lock",
+          "Teal",
+          "#5dbfb8"
+        ]
+      ]
+    },
+    {
+      "id": "battery-light",
+      "title": "Battery",
+      "icon": "battery",
+      "values": [
+        [
+          "1–10%",
+          "Red",
+          "#f4717b"
+        ],
+        [
+          "11–95%",
+          "Orange",
+          "#efb268"
+        ],
+        [
+          "96–100%",
+          "Green",
+          "#63e6b4"
+        ]
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "id": "modes",
+      "question": "Which mode should I use?",
+      "icon": "sliders-horizontal",
+      "aliases": "win mac windows macos wired wireless usb switch mode",
+      "answer": [
+        "Win / Mac: match your computer.",
+        "Wired: USB-C data cable. Wireless: Bluetooth or dongle. Off: power down."
+      ]
+    },
+    {
+      "id": "bluetooth-pairing",
+      "question": "How do I pair Bluetooth?",
+      "icon": "bluetooth",
+      "aliases": "bluetooth bt pair device connect",
+      "answer": [
+        "Select Wireless. Hold Fn + 1, 2 or 3 for 3 seconds, then pair in your computer’s Bluetooth settings."
+      ]
+    },
+    {
+      "id": "knob",
+      "question": "What does the knob do?",
+      "icon": "volume-2",
+      "aliases": "knob dial volume mute sound install",
+      "answer": [
+        "Turn to adjust volume. Press to mute."
+      ],
+      "link": [
+        "Installation diagrams",
+        "https://cdn.shopify.com/s/files/1/0268/7297/1373/files/Air75_V3_Quick_Guide_FAQ.pdf?v=1753438891#page=4"
+      ]
+    },
+    {
+      "id": "customize",
+      "question": "Can I remap keys?",
+      "icon": "keyboard",
+      "aliases": "remap customize custom keyboard macro nuphy io layers",
+      "answer": [
+        "USB + Wired, then NuPhy IO in Edge or Chrome. Customize keys, lighting and knob actions."
+      ],
+      "link": [
+        "Open NuPhy IO",
+        "https://www.nuphy.io/"
+      ]
+    },
+    {
+      "id": "help",
+      "question": "Still won’t connect?",
+      "icon": "circle-help",
+      "aliases": "help troubleshoot problem dongle receiver bluetooth flashing green",
+      "answer": [
+        "Dongle: hold Fn + 4 for 3 seconds, then reinsert it. Avoid metal USB hubs.",
+        "Bluetooth: forget the saved device and pair again. Check firmware in NuPhy IO if needed."
+      ],
+      "link": [
+        "Contact NuPhy",
+        "mailto:service@nuphy.com"
+      ]
+    }
+  ]
+}

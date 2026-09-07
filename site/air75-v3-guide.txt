@@ -1,0 +1,159 @@
+NuPhy Air75 V3
+
+ANSI / US default assignments.
+
+Pair your dongle
+
+1. Unplug the dongle.
+
+2. Select Wireless.
+
+3. Hold Fn + 4 for 3 seconds.
+
+4. Flashing green? Plug the dongle in.
+
+Connection
+
+Bluetooth 1
+
+Fn + 1
+
+Bluetooth 2
+
+Fn + 2
+
+Bluetooth 3
+
+Fn + 3
+
+2.4 GHz dongle
+
+Fn + 4
+
+Wireless: tap to switch; hold 3 sec to pair.
+
+System
+
+Auto sleep on / off
+
+Fn + ]
+
+Battery display on / off
+
+Fn + \
+
+Factory reset
+
+Fn + [ (hold 3 sec)
+
+Sleep after 6 minutes idle.
+
+RGB backlight
+
+Brightness up
+
+Fn + Up
+
+Brightness down
+
+Fn + Down
+
+Next effect
+
+Fn + Left
+
+Next color
+
+Fn + Right
+
+Animation slower
+
+Fn + ,
+
+Animation faster
+
+Fn + .
+
+Side lights
+
+Brightness up
+
+Fn + M + Up
+
+Brightness down
+
+Fn + M + Down
+
+Next effect
+
+Fn + M + Left
+
+Next color
+
+Fn + M + Right
+
+Animation slower
+
+Fn + M + ,
+
+Animation faster
+
+Fn + M + .
+
+Screenshots
+
+Select an area | Mac / Win
+
+Screenshot
+
+Full screen | Mac
+
+Fn + Screenshot
+
+Use the screenshot-icon key.
+
+Connection lights
+
+Green: Dongle; Blue: Bluetooth; Yellow: Wired; Teal: Caps Lock
+
+Battery lights
+
+Red: 1-10%; Orange: 11-95%; Green: 96-100%
+
+Which mode should I use?
+
+Win / Mac: match your computer.
+
+Wired: USB-C data cable. Wireless: Bluetooth or dongle. Off: power down.
+
+How do I pair Bluetooth?
+
+Select Wireless. Hold Fn + 1, 2 or 3 for 3 seconds, then pair in your computer's Bluetooth settings.
+
+What does the knob do?
+
+Turn to adjust volume. Press to mute.
+
+Installation diagrams: https://cdn.shopify.com/s/files/1/0268/7297/1373/files/Air75_V3_Quick_Guide_FAQ.pdf?v=1753438891#page=4
+
+Can I remap keys?
+
+USB + Wired, then NuPhy IO in Edge or Chrome. Customize keys, lighting and knob actions.
+
+Open NuPhy IO: https://www.nuphy.io/
+
+Still won't connect?
+
+Dongle: hold Fn + 4 for 3 seconds, then reinsert it. Avoid metal USB hubs.
+
+Bluetooth: forget the saved device and pair again. Check firmware in NuPhy IO if needed.
+
+Contact NuPhy: mailto:service@nuphy.com
+
+Sources
+
+Quick Guide & FAQ: https://cdn.shopify.com/s/files/1/0268/7297/1373/files/Air75_V3_Quick_Guide_FAQ.pdf?v=1753438891
+
+Full ANSI manual: https://www.nuphy.io/en-US/keyboardDescription
+
+Online guide: https://aayush9029.github.io/guides/

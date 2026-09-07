@@ -57,7 +57,7 @@ def validate():
     page.feed(markup)
     assert not any(term in markup for term in ['localhost', '127.0.0.1', 'file://', '/tmp/']), 'Local URL in public page'
     assert len([t for t,a in page.tags if t == 'h1']) == 1, 'Expected one H1'
-    assert 'NuPhy Air65 V3' in page.title and 30 <= len(page.title) <= 65, 'Title needs product name and readable length'
+    assert 'NuPhy Air75 V3' in page.title and 30 <= len(page.title) <= 65, 'Title needs product name and readable length'
     assert 120 <= len(page.metadata['description']) <= 160, 'Description needs a concise search summary'
     assert page.metadata['robots'] == 'index, follow, max-image-preview:large', 'Indexing disabled'
     assert ('html', {'lang':'en'}) in page.tags, 'Page must be English'
@@ -68,25 +68,21 @@ def validate():
     assert page.metadata['twitter:card'] == 'summary_large_image'
     assert 'og:image:alt' in page.metadata and 'twitter:image:alt' in page.metadata
     assert len([a for t,a in page.tags if 'data-shortcut' in a]) == 21, 'Missing keyboard shortcuts'
+    assert len([a for t,a in page.tags if t == 'details' and a.get('name') == 'help']) == 5, 'Missing help disclosures'
+    assert {'command-menu', 'command-trigger', 'command-input', 'command-options', 'shortcuts'} <= page.ids, 'Missing navigation or shortcuts'
+    assert 'shortcut-search' not in page.ids, 'Old shortcut finder remains'
     assert len(page.schemas) == 1
-    graph = page.schemas[0]['@graph']
-    assert page.schemas[0]['@context'] == 'https://schema.org'
-    article = next(item for item in graph if item['@type'] == 'Article')
+    article = page.schemas[0]
+    assert article['@context'] == 'https://schema.org' and article['@type'] == 'Article'
     assert article['headline'] == page.title
-    assert article['inLanguage'] == 'en' and article['author']['@id'] == BASE+'#author'
-    assert article['mainEntityOfPage']['@id'] == BASE+'#webpage'
+    assert article['inLanguage'] == 'en' and article['author']['name'] == 'Aayush9029'
+    assert article['mainEntityOfPage'] == BASE
     assert article['dateModified'] in markup
-    schema_ids = {item['@id'] for item in graph}
-    def check_references(value):
-        if isinstance(value,dict):
-            if set(value) == {'@id'}:
-                assert value['@id'] in schema_ids, f'Unresolved schema reference: {value}'
-            for child in value.values():
-                check_references(child)
-        elif isinstance(value,list):
-            for child in value:
-                check_references(child)
-    check_references(graph)
+    data = json.loads((SITE / 'guide.json').read_text())
+    assert article['dateModified'] == data['modified']
+    assert article['citation'] == [data['source'], data['manual']]
+    assert sum(len(group['shortcuts']) for group in data['groups']) == 21
+    assert (SITE / 'air75-v3-guide.txt').is_file()
     files = set()
     for tag, attrs in page.tags:
         if tag == 'img':
@@ -121,16 +117,16 @@ def validate():
     error = Page()
     error.feed((SITE/'404.html').read_text())
     assert error.metadata['robots'] == 'noindex'
-    assert (SITE/'air65-v3-english-guide.pdf').read_bytes().startswith(b'%PDF-')
+    assert (SITE/'air75-v3-english-guide.pdf').read_bytes().startswith(b'%PDF-')
     print(f'PASS: English HTML, canonical, metadata, schema, 21 shortcuts, sitemap, 404, {len(files)} local resources.')
     print('PASS: Every image has dimensions and alt text; every static asset is under 200 KB.')
     return files
 
 def validate_live(files):
-    targets = ['', 'sitemap.xml', 'air65-v3-english-guide.pdf', *sorted(files)]
+    targets = ['', 'sitemap.xml', 'air75-v3-english-guide.pdf', *sorted(files)]
     for path in dict.fromkeys(targets):
         url = urljoin(BASE,path)
-        with urlopen(Request(url,headers={'User-Agent':'Air65GuideValidation/1.0'}),timeout=30) as response:
+        with urlopen(Request(url,headers={'User-Agent':'Air75GuideValidation/1.0'}),timeout=30) as response:
             assert response.status == 200, f'{url}: {response.status}'
             if path == '':
                 deployed = response.read().decode()
